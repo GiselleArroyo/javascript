@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2 style="color: rgb(233, 28, 141);">JavaScript Introduction</h2>
+<h3 style="color: rgb(193, 112, 156);">Example 1.</h3>
+<p id="demo">Click the button below.</p>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello terricolas!"'>Click to see the message</button>
+<button type="button" onclick="document.getElementById('demo').style.fontSize='25px'">Change font size</button>
+<button type="button" onclick="document.getElementById('demo').style.display='none'">Hide me</button>
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Show me</button>
+</br>
+<br>▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ </br>
+</br>
+<div style="display:grid;">
+<h3 style="color: rgb(193, 112, 156);">Example 2.</h3>
+<button style="width:100px" onclick="document.getElementById('myImage').src='/images/pic_bulbon.gif'">Turn on</button>
+<button style="width:100px" onclick="document.getElementById('myImage').src='/images/pic_bulboff.gif'">Turn off</button>
+</br>
+<img id="myImage" src="/images/pic_bulboff.gif" style="width:100px">
+</br>
+</br>
+<p>Click the bulb.</p>
+<img id="lighbulb" onclick="changeImage()" src="./images/pic_bulboff.gif" style="width:100px">
+<script>
+    function changeImage() {
+       var image = document.getElementById('lighbulb');
+       if (image.src.match("bulbon")) {
+           image.src = "/images/pic_bulboff.gif";
+       } else {
+          image.src = "/images/pic_bulbon.gif";
+      }
+   }
+</script>
+</div>
+</br>
+<br>▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ ▄ ■ </br>
+</body>
+</html>
